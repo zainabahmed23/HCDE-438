@@ -1,5 +1,5 @@
 .App {
-  background: rgb(255, 244, 182);
+  background:linear-gradient(145deg, rgb(0, 100, 109) 42%, rgb(65, 28, 206)) 0%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -8,7 +8,7 @@
 .header {
   height: 4rem;
   width: 100%;
-  border-bottom: 2px solid rgb(0, 0, 0);
+  border-bottom: 2px solid white;
   display: flex;
   align-items: center;
   padding: 0 1rem;
@@ -25,9 +25,9 @@
   border: 1px solid white;
 }
 .title {
-  color:black;
+  color: white;
   font-size: 2rem;
-  font-weight: 100;
+  font-weight: 150;
   margin-left: 1rem;
 }
 .footer {
@@ -46,16 +46,32 @@
   height: 2rem;
   border-radius: 1rem;
   padding: 0 1rem;
-  background:white;
+  background:rgb(0, 0, 0);
   color:black;
 }
 .send {
-  background:rgb(255, 244, 182);
+  background:white;
   border-radius: 50%;
   border: none;
   height: 1.7rem;
-  width: 1.7rem;
+  width: 2rem;
   position: absolute;
   right: 1.15rem;
   cursor: pointer;
+}
+.messages {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  overflow: auto;
+  max-height: calc(100vh - 4rem - 4rem);
+  min-height: calc(100vh - 4rem - 4rem);
+  padding: 0.3rem;
+}
+.message {
+  color: black;
+  background: pink;
+  padding: 0.3rem 1rem;
+  margin: 0.2rem;
+  border-radius: 0.7rem;
 }
