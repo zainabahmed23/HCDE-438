@@ -1,7 +1,8 @@
 import "./TextInput.css";
 import { useState } from "react";
 
-function TextInput(props) {
+function TextInput(props) { //passes message to the app.js component
+//controls message UI through a js variable
   const [text, setText] = useState("");
 
   function send() {
