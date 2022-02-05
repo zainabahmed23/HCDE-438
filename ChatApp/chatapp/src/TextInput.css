@@ -1,5 +1,5 @@
 .text-input {
-    width: 100%;
+    width:calc(100% - 50px);
     border: 1px solid white;
     height: 2rem;
     border-radius: 1rem;
