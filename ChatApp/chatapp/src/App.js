@@ -3,6 +3,7 @@ import TextInput from "./TextInput";
 import { useState } from "react";
 import Message from "./Message";
 import Camera from 'react-snap-pic'
+import NamePicker from "./namePicker";
 
 function App() {
   const [showCamera, setShowCamera] = useState(false)
