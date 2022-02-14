@@ -1,5 +1,5 @@
 {
-  "name": "chatapp",
+  "name": "chatter",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -36,5 +36,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zainabahmed23/HCDE-438.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zainabahmed23/HCDE-438/issues"
+  },
+  "homepage": "https://github.com/zainabahmed23/HCDE-438#readme",
+  "description": ""
 }
