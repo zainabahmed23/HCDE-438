@@ -1,35 +1,16 @@
 import "./App.css";
-import { useState } from "react";
-import Message from "./Message";
+import '@progress/kendo-theme-default/dist/all.css';  
+import {UWDropDownList} from "./UWDropDownList.js";  
 
-function App() {
-  const [messages, setMessages] = useState([]);
-  function sendMessage(text) {
-    const newMessage = {
-      text,
-      time: Date.now(),
-      user: "Zainab",
-    };
-
-    setMessages([newMessage, ...messages]);
-  }
-
-  console.log(messages);
-  return (
-    <div className="App">
-      <header className="header">
+function App() {  
+  return <div className="App">
+    <header className="header">
         <span className="title">University of Washington</span>
         <span className="body">Vending Machine Content Viewer</span>
       </header>
-      <div className="messages">
-        {messages.map((msg) => {
-          return <Message {...msg} />;
-        })}
-      </div>
-    </div>
-
-    
-  );
-}
-
-export default App;
+      
+  </div>
+  ;  
+}  
+  
+export default App;  
